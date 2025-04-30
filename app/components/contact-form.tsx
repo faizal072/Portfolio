@@ -22,7 +22,7 @@ export default function ContactForm() {
       message: formData.get("message"),
     }
 
-    const res = await fetch("https://portfolio-02o3.onrender.com/api/contact", {
+    const res = await fetch("http://localhost:5000/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
